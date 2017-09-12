@@ -1,0 +1,7 @@
+<%= link_to 'Write a New article', new_article_path %>
+
+<% @articles.each do |article| %>
+	<h3> <%= article.title %> </h3>
+	<textarea rows="4" cols="50"> <%= article.text %> </textarea>
+	<%= link_to 'Blog', article %>
+<% end %>
